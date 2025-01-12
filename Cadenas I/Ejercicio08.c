@@ -30,12 +30,12 @@ void ordenar(char* nombre) {
     int i, j = 0, ipa, isa;
     
 	for (ipa = strlen(nombre) - 1; nombre[ipa] != ' '; ipa--); // Situarse en el inicio del primer apellido
-    //printf("%c\n", nombre[ipa+1]);
+    printf("%c\n", nombre[ipa+1]);
 	for (i = ipa + 1; nombre[i] != '\0'; i++) aux[j++] = nombre[i];
 	aux[j++] = ' ';
     
 	for (isa = ipa - 1; nombre[isa] != ' '; isa--); // Situarse en el inicio del segundo apellido
-	//printf("%c\n", nombre[isa+1]); 
+	printf("%c\n", nombre[isa+1]); 
 	for (i = isa + 1; i < ipa; i++) aux[j++] = nombre[i];
     aux[j++] = ' ';
 	

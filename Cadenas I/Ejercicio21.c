@@ -18,6 +18,7 @@ void introducir(char* tabla){
 	printf("Introduce: ");
 	scanf("%[^\n]", tabla);
 }
+
 void eliminarEspacios(char* tabla) { // Por si la cadena es una frase palíndroma: "la ruta natural".
     int i=0, j=0;
     while (tabla[i] != '\0') {
